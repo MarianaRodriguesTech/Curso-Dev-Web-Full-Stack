@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: titulo;
+    src: url(fontes/Barlow_Condensed/BarlowCondensed-Regular.ttf);
+}
+
+@font-face {
+    font-family: paragrafo;
+    src: url(fontes/Barlow_Condensed/BarlowCondensed-Italic.ttf)
+}
+
+h1{
+    font-family: titulo;
+}
+
+p{
+    font-family: paragrafo;
+}
+button{
+    font-family: paragrafo;
+}
