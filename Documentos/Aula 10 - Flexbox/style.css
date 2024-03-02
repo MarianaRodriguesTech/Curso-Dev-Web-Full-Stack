@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
+    /* flex-flow: row nowrap; */
+    justify-content: space-around;
+    align-items: center;
+    /* align-content: center; — Funciona quando tem várias linhas de conteúdo*/
+}
+
+img{
+    width: 100%;
+}
+
+.item{
+    width: 200px;
+}
+
+.item3{
+    background-color: rgb(217, 252, 252);
+    /* flex-grow: 1;
+    flex-shrink: 3; */
+    order: -1;
+    align-self: flex-end;
+}
