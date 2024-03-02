@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação do texto</title>
+</head>
+<body>
+    
+    <header>
+        <h1>Formatação de Textos</h1>
+    </header>
+     
+    <main>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam inventore, asperiores animi mollitia voluptate alias illum reprehenderit ea deleniti ad aperiam assumenda culpa adipisci, possimus sunt dolor repudiandae, similique
+            <br><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum laborum, nesciunt cumque ipsam non quos ratione harum atque alias, dolorem omnis maxime commodi expedita sapiente porro cupiditate voluptatem. 
+            <br><br>
+            Delectus, blanditiis!
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam commodi eveniet quibusdam, vitae maxime fuga. Explicabo voluptatem possimus ullam cumque, amet quaerat dolorem pariatur tenetur vel praesentium illo numquam nisi!
+            
+        </p>
+    </main>
+ <br>
+    <footer>
+        <p>Desenvolvido por Mariana Rodrigues | 2023 &copy;</p>
+    </footer>
+
+
+
+</body>
+</html>
