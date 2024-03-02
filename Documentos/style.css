@@ -1,0 +1,120 @@
+@charset "utf-8";
+@font-face { 
+    font-family: font1;
+    src: url(./fonts/VampireKingDemoRegular.ttf);
+}
+
+body{
+
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #020229;
+}
+
+header h1{
+    text-align: center;
+    color: #ffffff;
+    /* font-family: 'Dela Gothic One', sans-serif; */
+    font-family: font1;
+    font-size: 45px;
+}
+
+
+
+
+.container{
+    height: 460px;
+    width: 800px;
+    overflow: hidden;
+    position: absolute; 
+    /* Possition absolute Torna possível alterar a posição do container */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+ 
+    /* transform translate alterar a posição do eixo do container */
+} 
+
+.imagem img{
+   
+   width:100%;
+   height:100%;
+  
+  
+}
+
+.navegacao{
+
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+
+}
+
+.bar{
+    background-color: #ffffff;
+    width: 30px;
+    height: 5px;
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+.bar:hover{
+    background-color: #4169E1;
+   
+}
+
+input{
+    display: none;
+}
+
+.imagens{
+    display: flex;
+    height: 100%;
+    width: 600%;
+}
+
+.imagem{
+    width: 16.6666666667%;
+    transition: 0.5s;
+}
+
+#imagem1:checked ~ .img1{
+    margin-left: 0;
+
+}
+
+#imagem2:checked ~ .img1{
+    margin-left: -16.6666666667%;
+}
+
+#imagem3:checked ~ .img1{
+    margin-left: -33.3333333333%;
+}
+
+#imagem4:checked ~ .img1{
+    margin-left: -50%;
+}
+
+#imagem5:checked ~ .img1{
+    margin-left: -66.6666666667%;
+}
+
+#imagem6:checked ~ .img1{
+    margin-left: -83.3333333333%;
+}
+
+footer{
+    border: 1px solid #030341;
+    border-radius: 3px;
+    background-color: #ffffff;
+    position: fixed;
+    bottom: 0;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
