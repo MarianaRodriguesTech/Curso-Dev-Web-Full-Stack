@@ -1,0 +1,125 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f2ffff;
+}
+
+@font-face {
+    font-family: fonte1;
+    src: url(fontes/Rowdies-Regular.ttf);
+}
+
+
+body{
+    border: 10px solid #d8f7f0;
+    border-radius: 4px;
+}
+/* ---------------------------------------------------------------- */
+.formulario{
+    font-family: fonte1;
+    padding: 0.4em;
+    margin-top: 3em;
+    text-align: center;
+}
+
+.img{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+h1{
+    font-family:fonte1;
+    padding: 0.9em;
+    text-align: center;
+}
+/* ------------------------------------------ */
+.maior{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+#alerta{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.botao-alerta{
+    width: 20em;
+    border: none;
+    cursor: pointer;
+
+}
+
+#alerta img{
+    width: 25em;
+}
+
+
+
+/* ------------------------------------------ */
+.menor{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.naoPode{
+    margin-top: 5em;
+    width: 30em;
+}
+
+#bottle{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.btn-bottle{
+    width: 20em;
+    border: none;
+    cursor: pointer;
+
+}
+
+#bottle img{
+    width: 25em;
+}
+/* --------------------------------------------------- */
+.btn{
+    width: 5em;
+    font-family: fonte1;
+    margin-top: 2em;
+
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: yellowgreen ;
+}
+
+input{
+    background-color: yellowgreen;
+
+}
+/* ------------------------------------------------------------------------------ */
+p{
+    font-family: fonte1;
+    margin-top: 2em;
+    text-align: center;
+}
+/* -------------------------------------------: */
+
+footer p{
+    font-family: fonte1;
+    text-align: center;
+    margin-top: 5em;
+    font-family: fonte1;
+    margin-bottom: 60px;
+
+}
