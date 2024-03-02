@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+/* Gravamos informações na RAIZ "root" do html, para facilitar o trabalho. Armazenamos estas VARIÁVEIS na memória do pc.*/
+:root{
+    --cor-texto-principal: #ff00ff;
+    --cor-titulo: #ec91a8;
+    --tamanho-texto: 1.5em;
+    --tamanho-titulo: 8em;
+}
+
+/*Dica: Usar para criar paletas de cor em um projeto ou para formatações que usamos de forma muito repetitiva.*/
+
+
+/*Para usar as variáveis, usamos o var()*/
+h1{
+    font-size: var(--tamanho-titulo);
+    color: var(--cor-titulo);
+
+/*____CRIAR UM TEXTO EM DEGRADÊ____*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    text-align: center;
+/*Criamos primeiro um degradê*/
+    /* background: linear-gradient(to bottom, #5b1a81, #00ffff); */
+/*Recortamos usando o texto como molde*/
+    background-clip: text;
+    -webkit-background-clip: text;
+/*Deixamos o texto trasnsparente e vemos o degradê*/
+    -webkit-text-fill-color: transparent;
+
+/*Podemos colocar um gif como "cor da imagem"*/
+    background-image: url(https://media.giphy.com/media/qGWVA1zoivT7a/giphy.gif);
+}
+
+/* Motores de Renderização:
+-o para o Opera
+-moz para o firefox
+-webkit para o chrome e o safari
+-ms para o internet explorer
