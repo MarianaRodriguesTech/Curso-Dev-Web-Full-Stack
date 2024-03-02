@@ -1,0 +1,83 @@
+@charset "utf-8";
+@font-face { 
+    font-family: font1;
+    src: url(fontes/ElMessiri-VariableFont_wght.ttf);
+}
+
+body{
+    border: 5px solid E48F45;
+    margin: 0;
+    padding: 20px;
+    background-color: #994D1C;
+    font-family: font1;
+    
+}
+
+
+h1{
+    color: #ffffff;
+    font-size: 7em;
+    text-align: center;
+    font-family:font1;
+    text-shadow: #FFFFFF;
+    background: #E48F45;
+    text-shadow: 4px 3px 0px #7A7A7A;
+    
+}
+
+h2{
+    color: #ffffff;
+    font-size: 5em;
+    text-align: center;
+    font-family: font1;
+    background-color: #E48F45;
+    text-shadow: 4px 3px 0px #7A7A7A;
+
+   
+}
+h3{
+    margin-bottom: 40px;
+    color: #ffffff;
+    text-align: center;
+    font-family: font1;
+    font-size: 20px;
+
+
+    
+}
+
+p{
+color: #ffffff;
+text-align: justify;
+font-family: font1;
+font-size: 25px;
+}
+
+
+.img1{
+    width: 16.6666666667%;
+    border: 5px #E48F45;
+    border-radius: 1px;
+}
+
+
+#carrossel {
+ display: flex;
+ margin-top: 50px;
+ margin-bottom: 50px;
+}
+
+.video{
+
+   text-align: center;
+   
+}
+
+
+footer{
+    margin-top: 60px;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    font-family: font1;
+}
