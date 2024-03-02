@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+/*ACCORDION — Podemos editar a cor de formatação padrão do Bootstrap, criando uma class e chamando ela aqui.*/
+.cor-code{ 
+    color: rgb(204, 133, 189);
+}
+
+/* CAROUSEL — Para editar a formatação padrão do tamanho, criei uma div com class acima das divs do boot, daí chamei ela aqui.*/
+.car-tam{
+    margin: auto;
+    width: 60%;
+}
+
+.cards{
+    display: flex;
+}
+
+.card-img-top{
+    height: 100%;
+    width: 100%;
+}
