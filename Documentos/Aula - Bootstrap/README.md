@@ -1,6 +1,10 @@
-<h1 align="center"> Winx Club
-  
-![image](https://github.com/MarianaRodriguesTech/WinxClub/assets/141480630/164b8d4d-b487-4432-898b-60ccdcc19f14)
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="(https://github.com/MarianaRodriguesTech/Curso-Dev-Web-Full-Stack/assets/141480630/a7f19d3f-7339-4975-9dd5-421d9f4c0535)" />
+  </a>
+</p>
+
+![Interpreting Numerical Expressions Math Presentation in Light Blue Math Doodles](https://github.com/MarianaRodriguesTech/Curso-Dev-Web-Full-Stack/assets/141480630/f8d7eb1e-7fd0-4019-ae77-16468b6cdef4)
 
 </h1>
 
@@ -9,16 +13,13 @@
 ## Sobre o projeto:
 
 
-<p>Descrição sobre o projeto ...............</p>
+<p>Aula onde foi-me apresentado a biblioteca Bootstrap, exemplos de usos, funcionalidades, cuidados que devemos ter ao utilizar e etc </p>
 
 <details>
 <summary>Habilidades desenvolvidas</summary>
   
-- HTML
-
-- CSS
-
-- Conhecimento prévio em JavaScript
+- Conhecimento da biblioteca Bootstrap.
+- Formas de utilizar e cuidados.
   
 </details>
 
