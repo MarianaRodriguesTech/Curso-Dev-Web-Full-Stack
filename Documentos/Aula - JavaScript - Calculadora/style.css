@@ -1,0 +1,89 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: fonte1;
+    src: url(fontes/Choco\ Taste\ Trial.otf);
+}
+
+body{
+    background-color: #f4ead5;
+    text-align: center;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1{
+
+    margin-bottom: 10px;
+    font-family: fonte1;
+    font-size: 40px;
+}
+
+#calculator{
+    max-width: 360px;
+    background-color: #e94e77;
+    border-radius: 13px;
+    padding: 18px;
+    box-shadow: 6px 6px 6px 6px white ;
+}
+
+#display{
+    width: 100%;
+    height: 60px;
+    font-size: 22px;
+    text-align: right;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 15px;
+    color: #a5cc7a;
+    background: #c6e5d9;
+    border: none;
+    box-sizing: border-box;
+}
+
+button{
+    width: calc(25% - 12px);
+    height: 50px;
+    font-size: 22px;
+    margin: 10px 5px;
+    border: 10px;
+    float: left;
+    background-color:#a7cc15;
+    color:  yellow;
+    box-shadow: 2px 2px 2px 2px white;
+    border-radius: 15px;
+}
+
+.operator{
+    color: #140d1a;
+    background-color:#36cecc ;
+}
+
+#ac{
+    color: #140d1a;
+}
+
+.equal{
+    width: calc(50% - 12px);
+    background-color: #f56217 ;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+button:active{
+    transform: scale(0.9);
+    box-shadow: 2px 2px 2px 2px #abece4  ;
+}
+
+footer{
+    font-family: fonte1;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
