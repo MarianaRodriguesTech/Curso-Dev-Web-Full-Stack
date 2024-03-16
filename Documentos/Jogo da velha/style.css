@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: fonte1;
+    src: url(fonte/Easter\ Day\ TTF\ -\ Personal\ Use.ttf);
+}
+
+@font-face {
+    font-family: fonte2;
+    src: url(fonte/Easter\ art.ttf);
+}
+
+
+@font-face {
+    font-family: fonte3;
+    src: url(fonte/Raillinc.otf);
+}
+
+
+
+body {
+    background-image: url(https://cdn.pixabay.com/photo/2017/03/25/11/04/easter-2173309_1280.png);
+    background-size: cover;
+}
+
+h1 {
+    text-shadow: 1px 1px 1px #593314;
+    background-color: white;
+    font-size: 40px;
+    border-radius: 25px;
+    color: pink;
+    font-family: fonte1;
+    text-align: center;
+}
+
+
+.board {
+    margin-top: 2em;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px);
+    gap: 2px;
+}
+
+.cell {
+    color: #593314;
+    border: 30px solid transparent;
+    background-color: pink;
+    border-image: url("https://cdn.pixabay.com/photo/2014/04/03/10/01/chocolate-309609_960_720.png") 150 round;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    cursor: pointer;
+    font-family: fonte2;
+}
+
+#coelho{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+img{
+    margin-left: 38px;
+    width: 180px;
+}
+
+footer{
+    background-color: white;
+    border-radius: 20px;
+    color: #593314;
+    font-family: fonte3;
+    text-align: center;
+}
