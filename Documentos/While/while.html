@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="shortcut icon" href="https://cdn.pixabay.com/photo/2013/07/13/11/51/animal-158831_640.png">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura While</title>
+</head>
+<body>
+    <h1> Mario Quintana </h1>
+    <div id="frase"></div>
+
+    <script>
+        const frase = 'O segredo é não correr atrás das borboletas… É cuidar do jardim para que elas venham até você';
+        let resultado = '';
+        let contador = 0;
+
+        while(contador < 10){
+            resultado+= `<p> ${frase}</p>`;
+            contador++;
+        }
+
+        document.getElementById('frase').innerHTML = resultado;
+        
+        
+
+    </script>
+<footer>Desenvolvido por Mariana Rodrigues | 2024 &copy;
+</footer>
+</body>
+</html>
