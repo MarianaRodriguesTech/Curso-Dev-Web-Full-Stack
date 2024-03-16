@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="shortcut icon" href="img/computador-portatil.png" >
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Perguntas e Respostas</title>
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Quiz de Perguntas e Respostas</h1>
+        <div id="pergunta">
+        </div>
+        <div id="opcoes">
+        </div>
+        <div id="resultado">
+        </div>
+
+        <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnlkNXozemVnenh4c2d0eW51enl5bnEyeWVhdnY3Z3J4ZGMxc3ZsOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/wHvVfzcUJHYS8ldieb/giphy.gif" alt="">
+        
+        <footer>Desenvolvido por Mariana Rodrigues | &copy; </footer>
+    </div>
+    <script>
+
+        const perguntas = [
+            {
+                pergunta: "Qual foi a primeira pessoa a criar um programa computacional?",
+                opcoes: ["Mark Zuckerberg", "Ada Lovelace", "Alan Turing",],
+                resposta:"Ada Lovelace"
+            },
+            {
+                pergunta:"Qual o nome da primeira mulher desenvolvedora de jogos digitais?",
+                opcoes:["Betty Snyder", "Marlyn Wescoff", "Carol Shaw",],
+                resposta: "Carol Shaw"
+            },
+
+            {
+                pergunta:"Quem foi a primeira engenheira do Google?",
+                opcoes:["Marissa Mayer", "Karen Sparck Jones", "Jean Sammet",],
+                resposta: "Marissa Mayer"
+            },
+
+            {
+                pergunta:"Qual o nome da primeira mulher a ganhar o Turing Award",
+                opcoes:["Susan Kare", "Frances Allen", "Mary Kenneth Keller"],
+                resposta: "Frances Allen"
+            },
+
+            {
+                pergunta:"Quem criou uma linguagem de programação?",
+                opcoes:["Fran Bilas", "Hedy Lamarr", "Grace Hopper",],
+                resposta: "Grace Hopper"
+            }
+            ];
+
+            // mais perguntas
+            const perguntaElemento =  document.getElementById("pergunta");
+            const opcoesElemento = document.getElementById("opcoes");
+            const resultadoElemento = document.getElementById("resultado");
+
+            let indicePerguntaAtual = 0;
+
+            function carregarPergunta(){
+                const perguntaAtual = perguntas[indicePerguntaAtual];
+                perguntaElemento.textContent = perguntaAtual.pergunta;
+
+                opcoesElemento.innerHTML = "";
+                perguntaAtual.opcoes.forEach(opcao => {
+                const botao = document.createElement("button");
+                botao.textContent = opcao;
+                botao.addEventListener("click", () => verificarResposta(opcao));
+                opcoesElemento.appendChild(botao);
+                });  
+            }
+
+            function verificarResposta(respostaSelecionada){
+                const perguntaAtual = perguntas[indicePerguntaAtual];
+                if(respostaSelecionada === perguntaAtual.resposta) {
+                    resultadoElemento.textContent = "Resposta correta!";
+                    resultadoElemento.className = "correto";
+                } else{
+                    resultadoElemento.textContent = "Resposta incorreta. A resposta correta é: " + perguntaAtual.resposta;
+                    resultadoElemento.className = "incorreto";
+                }
+                //  avança para a proxima pergunta ou finaliza aqui
+                indicePerguntaAtual++;
+                if(indicePerguntaAtual< perguntas.length){
+                    setTimeout(carregarPergunta, 2000); 
+                    // Carrega a próxima pergunta após 2 segundos
+                }else{
+                    resultadoElemento.textContent = "Quiz concluído!";
+                    resultadoElemento.className = "";
+                }
+            }
+
+            carregarPergunta();
+    </script>
+</body>
+</html>
