@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="shortcut icon" href="img/dino.png" >
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escola Dinos</title>
+</head>
+<body>
+    <div id="container">
+        <h2>Gerador de Tabuada</h2>
+        <input type="number" id="numInput" placeholder="Digite um número">
+        <button onclick="geradorTabuada()">Gerar Tabuada</button>
+        <div id="tabuada"></div>
+    </div>
+ <!-- o ponto de exclamação deste ---- !numInput -- significa não igual -->
+    <script>
+
+        function geradorTabuada() {
+            var numInput = document.getElementById("numInput").value;
+            var tabuadaDiv = document.getElementById("tabuada");
+            tabuadaDiv.innerHTML = "";
+
+            if (!numInput || isNaN(numInput)) {
+                tabuadaDiv.innerHTML = "<p>Por favor, insira um número válido.</p>";
+                return;
+            }
+
+            var tableHTML = "<h3>Tabuada de " + numInput + "</h3><table border='1'><tr><th>Número</th><th>Resultado</th></tr>";
+
+            for (var i = 1; i <= 10; i++) {
+                tableHTML += "<tr><td>" + numInput + " x " + i + "</td><td>" + (numInput * i) + "</td></tr>";
+
+            }  
+
+            tableHTML += "</table";
+            tabuadaDiv.innerHTML = tableHTML;
+
+        }
+
+    </script>
+
+    <div id="dino">
+        <img src="img/dinosaur-4575110_640.webp" alt="">
+    </div>
+
+    <footer>Desenvolvido por Mariana Rodrigues | &copy; 2024</footer>
+</body>
+</html>
