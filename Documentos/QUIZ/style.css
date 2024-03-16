@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+@font-face {
+    font-family:fonte1;
+    src: url(fonte/Ballistone.ttf);
+}
+
+@font-face {
+    font-family:fonte2;
+    src: url(fonte/ModernSans-Light.otf);
+}
+
+
+body{
+    background-color: pink;
+    text-align: center;
+}
+h1{
+    font-family: fonte1;
+    font-size: 50px;
+}
+
+.quiz-container{
+    max-width: 600px;
+    margin: 0 auto;
+    
+}
+#pergunta{
+    font-family:fonte2;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#opcoes{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+button{
+    font-weight: bold;
+    font-family: fonte2;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.correto{
+    font-family: fonte2;
+    background-color: #88C34A;
+
+}
+
+.incorreto{
+    font-family: fonte2;
+    background-color: #ff5722;
+}
+
+img{
+    border: 5px solid pink;
+    border-radius: 10px;
+    margin-top:1.8em;
+    width: 16em;
+}
+
+footer{
+    margin-top: 2em;
+    font-size: 20px;
+    font-family: fonte2;
+    font-weight: bold;
+}
