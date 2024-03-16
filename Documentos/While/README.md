@@ -1,27 +1,26 @@
-<h1 align="center"> Quiz </h1>
-
-<div>
+<h1 align="center"> Estrutura de repetição While 🌸</h1>
   
-  ![Captura de tela 2024-03-05 052130](https://github.com/MarianaRodriguesTech/Quiz/assets/141480630/a8500482-c83a-4f04-85ad-b8b3967171a2)
-  
-</div>
+![Captura de tela 2024-03-10 081238](https://github.com/MarianaRodriguesTech/Estrutura-de-repeticao-while/assets/141480630/fede7ffb-1825-4072-88ea-53d3601c856a)
 
 <div align="center">
 
 ## Sobre o projeto:
 
-Desenvolvido em aula para estudarmos as diversas possibilidades de projetos que podemos criar com JavaScript.
+
+<p>Projeto feito para estudar sobre a estrutura de repetição WHILE.</p>
 
 <details>
-<summary>Habilidades aprimoradas</summary>
+<summary>Habilidades desenvolvidas</summary>
   
 - HTML
 
 - CSS
 
+- JavaScript
+
 - Lógica de programação
 
-- JavaScript
+- Estrutura de repetição While
   
 </details>
 
