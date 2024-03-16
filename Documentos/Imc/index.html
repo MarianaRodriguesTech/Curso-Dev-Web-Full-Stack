@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="shortcut icon" href="img/escala-de-peso.png">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" id="mobile-simulator">window.hasMobileFirstExtension = true;</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Índice de Massa Corporal</title>
+</head>
+<body>
+    
+<h1>IMC - Índice de Massa Corporal</h1>
+
+<form action="">
+    <label for="altura"> Altura: </label>
+    <input type="number" name="" id="altura">
+    <br>
+
+    <label for="peso">Peso (Kg):</label>
+    <input type="number" name="" id="peso" maxlength="5">
+    <br>
+
+    <button onclick="calcularImc()"> Calcular IMC </button>
+    <br>
+
+    <p>Seu índice de massa corporal é: <span id="resultado"></span></p>
+
+</form>
+
+<script>
+
+    function calcularImc() {
+        const peso = document.getElementById('peso').value;
+        const altura = document.getElementById('altura').value;
+        const imc = peso / (altura ** 2);
+        document.getElementById('resultado').textContent = imc.toFixed (2);
+    
+
+    var mensagem = "";
+
+    if (imc < 18.5) {
+        mensagem += " - Baixo Peso";
+    } else if (imc <= 24.9) {
+        mensagem += " - Peso Normal";
+    } else if (imc <= 29.9) {
+        mensagem += " - Sobrepeso";
+    } else {
+        mensagem += " - Obesidade";
+    } document.getElementById('resultado').textContent += mensagem;
+}
+</script>
+
+<footer>Desenvolvido por Mariana Rodrigues | &copy;</footer>
+
+</body>
+</html>
