@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="shortcut icon" href="img/Animal-4.jpg">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estruturas de repetição</title>
+</head>
+<body>
+    <h1>Patinhos</h1>
+    <div id="letra"></div>
+    <div id="img">
+    <img src="https://media3.giphy.com/media/10ge6i8Uci2HQI/giphy.gif?cid=ecf05e47ak8kykdv3rky9yhbt68ctlp6qblxufw00j3fpt4y&ep=v1_gifs_related&rid=giphy.gif&ct=g" alt=" vídeo curto dos patinhos andando em fila atrás de sua mãe">
+    </div>
+    <!-- Para concatenar com cifrão deve ser utilizado crase -->
+    <!-- A interrogação se refere ao operador ternário -->
+    <script>
+        let letra = "";
+        for (let i = 5; i >= 1; i--){
+          
+            letra += `<p>${i} patinho${i === 1 ? '':'s'} fo${i === 1 ?'i' : 'ram' } passear</p>`;
+            letra += `<p>Além das montanhas para brincar</p>`;
+            letra += `<p>A mamãe gritou: Quá, quá, quá, quá </p>`;
+            letra += `<p>Mas só ${i === 1 ? 'um' : i - 1 } patinho${i - 1 === 0 ? '' : 's'} vol${i - 1 === 0 ? 'tou' : 'taram'} de lá</p>`;
+            letra += `<br>`;
+        } 
+
+        document.getElementById('letra').innerHTML = letra;
+
+    </script>
+    <footer>Desenvolvido por Mariana Rodrigues | &copy;</footer>
+</body>
+</html>
