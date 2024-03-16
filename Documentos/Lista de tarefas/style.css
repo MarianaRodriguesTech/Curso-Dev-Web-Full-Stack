@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+
+@font-face {
+    font-family: fonte1;
+    src: url(fontes/HANDC___.TTF);
+}
+
+@font-face {
+    font-family: fonte2;
+    src: url(fontes/Schoolwork-Regular.ttf);
+}
+
+body{
+background-color: #5D768C;
+padding: 5px;
+}
+
+h1{
+    text-shadow: 2px 2px #CF7878;
+    font-size: 55px;
+    margin-top: 5px;
+    font-family: fonte2; 
+    text-align: center;
+    color: #f6da99;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+}
+
+#taskInput{
+    border-radius: 30px;
+    font-weight: 300;
+    color: #4C5939;
+    text-align: center;
+    background-color: #F2ECE9;
+    width: 70%;
+    margin-bottom: 10px;
+}
+
+#taskList{
+    color: #f6da99;
+    font-size: 45px;
+    font-family: fonte2;
+    text-align: center;
+    list-style-type: disc;
+    padding: 0;
+}
+
+.taskItem{
+    margin-bottom: 5px;
+}
+
+.taskItem button{
+    font-size: 30px;
+    font-family: fonte2;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+
+#addtarefa{
+    background-color: #CF7878;
+    margin-left: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: fonte2;
+    font-size: 30px;
+}
+
+#addtarefa:hover{
+    background-color: #F2F2F2;
+}
+
+ button{
+    background-color: #F2F2F2;
+    margin-left: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: fonte2;
+    font-size: 30px;
+}
+
+button:hover{
+    background-color: #D9667B;
+}
+
+
+#imagem{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    margin-top: 2em;
+    border-radius: 10px;
+    width: 400px;
+
+}
+
+footer{
+    color: #F2F2F2;
+    margin-top: 5em;
+    font-size: 35px;
+    font-family: fonte2;
+    text-align: center;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="shortcut icon" href="https://toppng.com/uploads/preview/studio-ghibli-closes-its-doors-studio-ghibli-totoro-11563214348valgmegcg5.png">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task List</title>
+</head>
+
+<body>
+
+    <h1>Lista de tarefas</h1>
+
+    <div>
+        <input type="text" id="taskInput" placeholder="Digite uma tarefa">
+        <button id="addtarefa" onclick="addTask()">Adicionar Tarefa</button>
+    </div>
+
+    <div id="imagem">
+        <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExc3l6OHA2Z2liNDl0M2J0OTVxYzV0MmFjNTJ0MmN5bG9oandlcnQxYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/zfZrTdIyaV2Zq/giphy.gif"
+            alt="">
+    </div>
+
+    <div>
+        <ul id="taskList">
+            <!-- Lista de tarefas será inserida aqui -->
+        </ul>
+    </div>
+
+    <script>
+        function addTask() {
+            var taskInput = document.getElementById("taskInput");
+            var taskText = taskInput.value.trim();
+
+            if (taskText !== "") {
+                var taskList = document.getElementById("taskList");
+                var li = document.createElement("li");
+                li.className = "taskItem";
+                li.innerHTML = taskText + '<button onclick="removeTask(this)">Remover</button>';
+                taskList.appendChild(li);
+                taskInput.value = "";
+            } else {
+                alert("Por favor, insira uma tarefa válida.");
+            }
+        }
+
+        function removeTask(button) {
+            var li = button.parentNode;
+            var ul = li.parentNode;
+            ul.removeChild(li);
+        }
+
+
+        // Evento que vai ocorrer quando clicar no enter
+        // O addEventListener() método da EventTargetinterface configura uma função que será chamada sempre que o evento especificado for entregue ao destino.
+
+        document.addEventListener("keypress", function (e) {
+            if (e.key === 'Enter') {
+
+                var btn = document.querySelector("#addtarefa");
+
+                btn.click();
+
+            }
+        });
+
+    </script>
+    <footer>
+        Desenvolvido por Mariana Rodrigues | &copy; 2024
+    </footer>
+</body>
+
+</html>
