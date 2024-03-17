@@ -9,7 +9,7 @@
 ## Sobre o projeto:
 
 
-<p>Projeto desenvolvido para estudo de JavaScript</p>
+<p>Projeto desenvolvido para estudo de JavaScript.</p>
 
 <details>
 <summary>Habilidades desenvolvidas</summary>
