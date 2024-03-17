@@ -13,7 +13,7 @@
 ## Sobre o projeto:
 
 
-<p>Aula onde foi-me apresentado a biblioteca Bootstrap, exemplos de usos, funcionalidades, cuidados que devemos ter ao utilizar e etc. </p>
+<p>Aula onde foi apresentado a biblioteca Bootstrap e seus exemplos de usos, funcionalidades, cuidados que devemos ter ao utilizar e etc. </p>
 
 <details>
 <summary>Habilidades desenvolvidas</summary>
