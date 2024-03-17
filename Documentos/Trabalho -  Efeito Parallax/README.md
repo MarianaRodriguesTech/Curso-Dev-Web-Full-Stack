@@ -1,6 +1,7 @@
-<h1 align="center"> Winx Club
+<h1 align="center"> Efeito Parallax </h1>
   
-![image](https://github.com/MarianaRodriguesTech/WinxClub/assets/141480630/164b8d4d-b487-4432-898b-60ccdcc19f14)
+
+![Captura de tela 2024-03-16 120051](https://github.com/MarianaRodriguesTech/Curso-Dev-Web-Full-Stack/assets/141480630/aa3fdfae-f595-47b9-9334-9639f151e456)
 
 </h1>
 
@@ -9,7 +10,7 @@
 ## Sobre o projeto:
 
 
-<p>Descrição sobre o projeto ...............</p>
+<p>Projeto desenvolvido em aula para estudo do efeito Parallax feito com CSS</p>
 
 <details>
 <summary>Habilidades desenvolvidas</summary>
@@ -17,8 +18,6 @@
 - HTML
 
 - CSS
-
-- Conhecimento prévio em JavaScript
   
 </details>
 
