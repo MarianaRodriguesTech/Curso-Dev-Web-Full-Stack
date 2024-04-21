@@ -11,8 +11,8 @@
 
 $texto = "Organize suas ideias";
 $frase = "Olá Mundo";
-$palavra = "Panqueca";
-$nome = "nathalia domingues";
+$palavra = "Morango";
+$nome = "mariana rodrigues";
 
 echo "<br> Transforma uma Palavra/Texto em Maiúscula: " . strtoupper($palavra);
 
