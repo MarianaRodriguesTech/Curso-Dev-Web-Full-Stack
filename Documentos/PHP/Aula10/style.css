@@ -1,0 +1,185 @@
+@charset "uft-8";
+
+
+body{
+    background-color: #D9923B;
+    padding: 10px;
+}
+
+h1{
+    text-align: center;
+    color: #223459;
+    font-family: "Philosopher", sans-serif;
+    font-style: normal;
+}
+
+h2{
+    text-align: center;
+    color: #731414;
+    font-family: "Philosopher", sans-serif;
+    font-style: normal;
+
+}
+
+.capafilme{
+    display: flex;
+    justify-content: center;
+}
+
+.filmecapa{
+    width: 500px;
+    border-radius: 10px;
+}
+
+img{
+    
+    width: 500px;
+    border-radius: 10px;
+}
+
+.php{
+    margin-top: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+option{
+    text-align: center;
+}
+
+select{
+    font-family: "Philosopher", sans-serif;
+    font-style: normal;
+    border-style: solid;
+    border-color: #731414;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+input{
+    font-family: "Philosopher", sans-serif;
+    font-style: normal;
+    border-radius: 10px;
+    cursor: pointer;
+    border-color: #731414;
+    border-style: solid;
+}
+
+input:hover{
+    background-color: #D9923B;
+}
+
+select:hover{
+    background-color: #D9923B;
+}
+
+p{
+    margin-left: 50px;
+    margin-right: 50px;
+    color: #731414;
+    text-align: justify;
+    font-size: 16pt;
+    font-family: "Philosopher", sans-serif;
+    font-style: normal;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    text-align: center;
+    color: #223459;
+    font-family: "Philosopher", sans-serif;
+    font-style: normal;
+}
+
+
+/* Responsividade */
+
+@media screen and (max-width: 768px) {
+
+    .filmecapa{
+        width: 350px;
+    }
+
+    img{
+        width: 350px;
+    }
+
+}
+	
+/* Dark-mode */
+
+.dark-mode{
+    background-color: #223459;
+}
+
+.dark-mode footer{
+    color: #D9A918;
+}
+
+.dark-mode h1{
+    color: #D9A918;
+}
+
+.dark-mode h2{
+    color:#D9A918;
+}
+
+.dark-mode p{
+    color: #D9A918;
+}
+
+.dark-mode input{
+    border-color: #D9A918;
+    border-style: solid;
+}
+
+.dark-mode select{
+    border-color: #D9A918;
+    border-style: solid;
+}
+
+.toggle-btn{
+    display: none;
+    /* none faz com que o elemento fique invisivel */
+}
+
+.toggle-label{
+    width: 60px;
+    height: 30px;
+    background-color: #223459;
+    border-radius: 15px;
+    cursor: pointer;
+    position: relative;
+    display: block;
+    /* display block fez com que aparecesse a trilha da bolinha */
+}
+
+.toggle-label::before{
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: #731414;
+    top: 1px;
+    left: 1px;
+    transition: transform 0.4s ease;
+}
+
+.toggle-btn:checked + .toggle-label{
+    background-color: #D9A918;
+}
+
+.toggle-btn:checked + .toggle-label::before{
+    transform: translateX(30px);
+    /* se movimentando 30px na horizontal */
+
+}
