@@ -12,4 +12,4 @@ Este repositório é uma parte do meu percurso de aprendizado no Instituto da Op
 
 ## 😺✨ Contato
 
-Quer conversar sobre programação, compartilhar ideias ou simplesmente trocar experiências? Não deixe de [enviar uma mensagem no LinkedIn](www.linkedin.com/in/marianarodriguesprofissional).
+Quer conversar sobre programação, compartilhar ideias ou simplesmente trocar experiências? Não deixe de [enviar uma mensagem no LinkedIn](https://www.linkedin.com/in/marianarodriguesprofissional/).
